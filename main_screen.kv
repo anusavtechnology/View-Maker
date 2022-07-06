@@ -1,0 +1,57 @@
+Screen:
+    name: "MainScreen"
+    FloatLayout:
+        
+            
+        
+        MDLabel:
+            text: "VIEW MAKER"
+            font_style: 'H4'
+            pos_hint : {'center_x':0.5 ,'center_y':0.9}
+            halign :"center"
+            
+         
+
+        MDTextField:
+            id:youtube_link
+            hint_text: "Enter YouTube Link"
+            helper_text:"forget"
+            pos_hint : {'center_x':0.5 ,'center_y':0.7}
+            width: 500
+            size_hint: (0.7,0.1)
+        	helper_text: 'Required'
+
+        MDTextField:
+            id:refresh_rate
+            hint_text: "Refresh rate in sec"
+            helper_text:"forget"
+            pos_hint : {'center_x':0.5 ,'center_y':0.6}
+            width: 500
+            size_hint: (0.7,0.1)
+        	helper_text: 'Required'
+
+        MDTextField:
+            id:window_opened
+            hint_text: "Enter no. of window to be opened"
+            helper_text:"forget"
+            pos_hint : {'center_x':0.5 ,'center_y':0.5}
+            width: 500
+            size_hint: (0.7,0.1)
+        	helper_text: 'Required'
+                   
+        MDRectangleFlatButton:
+            id: started
+            text: "Start"
+            pos_hint : {'center_x':0.5 ,'center_y':0.2}
+            text_color: 0, 0, 1, 1
+            md_bg_color: 1, 1, 0, 1
+            on_release: app.started()
+            width: 500
+        
+        
+       
+       
+            
+            
+
+
